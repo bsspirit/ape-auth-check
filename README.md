@@ -16,7 +16,7 @@ app.get('/',
 
 app.get('/login',
     login.isLoggedOut(),
-    site.index);
+    site.login);
 ```
 
 ## License
