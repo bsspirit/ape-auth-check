@@ -1,0 +1,15 @@
+{
+    "name": "ape-auth-check",
+    "version": "0.0.1",
+    "description": "Authenticate check.",
+    "keywords":[
+        "login","logout","authenticate","ape"
+    ],
+    "author": "Conan Zhang <bsspirit@gmail.com> (http://blog.fens.me)",
+    "license": "private",
+    "main": "logged.js",
+    "engines": {
+        "node": ">=v0.10.5"
+    },
+    "readmeFilename": "README.md"
+}
