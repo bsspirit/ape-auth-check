@@ -10,6 +10,5 @@
     "main": "logged.js",
     "engines": {
         "node": ">=v0.10.5"
-    },
-    "readmeFilename": "README.md"
+    }
 }
