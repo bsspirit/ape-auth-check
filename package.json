@@ -5,7 +5,7 @@
     "keywords":[
         "login","logout","authenticate","ape"
     ],
-    "author": "Conan Zhang <bsspirit@gmail.com> (http://blog.fens.me)",
+    "author": "Conan Zhang <bsspirit#gmail.com> (http://blog.fens.me)",
     "license": "private",
     "main": "logged.js",
     "engines": {

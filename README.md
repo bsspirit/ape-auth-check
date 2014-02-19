@@ -17,37 +17,37 @@ var login = require("ape-auth-check");
 ...
 
 app.use(express.cookieParser());
-app.use(express.session({ secret: 'blog.fens.me' }));
+app.use(express.session({ secret: "blog.fens.me" }));
 app.use(login.session());
 app.use(login.sessionAdmin())
 app.use(app.router);
 
 ...
 
-app.get('/home',
+app.get("/home",
     login.isLoggedIn(),
     site.index);
 
-app.get('/admin',
+app.get("/admin",
     login.isLoggedInAdmin(),
     site.index);
 
-app.get('/login',
+app.get("/login",
     login.isLoggedOut(),
     site.login);
 ```
 
 ```{javascript}
-app.get('/logout', function (req, res) {
+app.get("/logout", function (req, res) {
     login.logout(req,function(){
-        res.redirect('/');
+        res.redirect("/");
     });
 });
 
 app.get("/oauth/callback", function (req, res) {
     db.getUser(function(err,user)){
          login.login(req,user,function(){
-             res.redirect('/');
+             res.redirect("/");
          });
     }
 });
