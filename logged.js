@@ -12,8 +12,6 @@ exports.session = function () {
             req.isAuthenticated = function () {
                 return true;
             }
-
-            req.isAdmin = _this.sessionAdmin();
         }
         next();
     }
